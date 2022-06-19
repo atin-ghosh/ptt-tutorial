@@ -1,7 +1,7 @@
 <template>
   <div class = "container-edit">
       <form @submit="onSubmit" class="add-form">
-          <img src="../photo2.jpg" class="head-img" alt="hello" width="150" height="150">
+          <img src="../atin_photo2.jpg" class="head-img" alt="hello" width="150" height="150">
           <div class="form-control-3">
               <img src="../company.png" class="icon-img" alt="Company">
               <input type="text" style="width: 160px," v-model="company" name="company" />

@@ -1,7 +1,7 @@
 <template>
     <div class="container-2" v-if="!showEditDetails">
         <br>
-        <img src="../photo2.jpg" class="head-img" alt="">
+        <img src="../atin_photo2.jpg" class="head-img" alt="">
         <div>
             <EditUserButton 
             @click="onClick()" 
