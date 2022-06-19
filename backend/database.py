@@ -3,10 +3,10 @@ from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import sessionmaker
 from config import DB_USERNAME, DB_PASSWORD
 
-user = DB_USERNAME.value + "@ptt-db"
-password = DB_PASSWORD.value
+user = "postgres"
+password = "root"
 
-DATABASE_URL = 'postgresql://' + user + ':' + password + '@ptt-db.postgres.database.azure.com:5432/postgres'
+DATABASE_URL = 'postgresql://' + user + ':' + password + '@localhost:5432/community'
 
 engine = create_engine(
     DATABASE_URL, pool_size=3, max_overflow=0

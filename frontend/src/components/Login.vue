@@ -33,7 +33,7 @@ export default {
         params.append("username", this.username)
         params.append("password", this.password)
         try {
-            const response = await fetch('https://ptt-server-backend.azurewebsites.net/login', {
+            const response = await fetch('http://0.0.0.0:9000/login', {
                 method: 'POST',
                 headers: {'Content-type': 'application/x-www-form-urlencoded'},
                 body: params

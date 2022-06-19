@@ -52,7 +52,7 @@ export default {
         async editDetails(details) {
             const tokenInfo = JSON.parse(localStorage.getItem("sessionToken"))
 
-            const response = await fetch('https://ptt-server-backend.azurewebsites.net/user/edit_user', {
+            const response = await fetch('http://0.0.0.0:9000/user/edit_user', {
                 method: 'POST',
                 headers: {
                     'Content-type': 'application/json',
@@ -77,7 +77,7 @@ export default {
         async fetchUserData() {
             const tokenInfo = JSON.parse(localStorage.getItem("sessionToken"))
 
-            const response = await fetch('https://ptt-server-backend.azurewebsites.net/user/get_user', {
+            const response = await fetch('http://0.0.0.0:9000/user/get_user', {
                 method: 'POST',
                 headers: {
                     'Content-type': 'application/json',

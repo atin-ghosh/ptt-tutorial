@@ -56,7 +56,7 @@ export default {
     methods: {
       async addToReadList(post_id) {
         const tokenInfo = JSON.parse(localStorage.getItem("sessionToken"))
-        const response = await fetch('https://ptt-server-backend.azurewebsites.net/user/has_read', {
+        const response = await fetch('http://0.0.0.0:9000/user/has_read', {
         method: 'POST',
         headers: {
             'Content-type': 'application/json',

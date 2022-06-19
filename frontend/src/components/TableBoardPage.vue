@@ -60,7 +60,7 @@ export default {
         async onClickAddFav(board) {
             var board_name = board.board_name
             const tokenInfo = JSON.parse(localStorage.getItem("sessionToken"))
-            const response = await fetch('https://ptt-server-backend.azurewebsites.net/board/add_fav', {
+            const response = await fetch('http://0.0.0.0:9000/board/add_fav', {
             method: 'POST',
             headers: {
                 'Content-type': 'application/json',
@@ -73,7 +73,7 @@ export default {
         },
         async onClickDelFav(board_name) {
             const tokenInfo = JSON.parse(localStorage.getItem("sessionToken"))
-            const response = await fetch('https://ptt-server-backend.azurewebsites.net/board/del_fav', {
+            const response = await fetch('http://0.0.0.0:9000/board/del_fav', {
             method: 'DELETE',
             headers: {
                 'Content-type': 'application/json',
