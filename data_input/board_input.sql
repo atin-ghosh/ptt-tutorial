@@ -1,0 +1,15 @@
+insert into board (name) values ('Gossiping');
+insert into board (name) values ('C_Chat');
+insert into board (name) values ('Stock');
+insert into board (name) values ('NBA');
+insert into board (name) values ('Lifeismoney');
+insert into board (name) values ('Baseball');
+insert into board (name) values ('LoL');
+insert into board (name) values ('movie');
+insert into board (name) values ('MobileComm');
+insert into board (name) values ('Tech_Job');
+insert into board (name) values ('HatePolitics');
+insert into board (name) values ('KoreaStar');
+insert into board (name) values ('creditcard');
+insert into board (name) values ('Beauty');
+insert into board (name) values ('car');
