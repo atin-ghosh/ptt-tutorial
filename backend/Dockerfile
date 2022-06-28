@@ -1,7 +1,8 @@
-FROM python:3.9-slim-buster
+FROM python:3.9
 
 WORKDIR /code
 COPY ./requirements.txt /code/requirements.txt
+# RUN apt-get install gcc python3-dev
 RUN pip install --no-cache-dir --upgrade -r /code/requirements.txt
 COPY . .
 

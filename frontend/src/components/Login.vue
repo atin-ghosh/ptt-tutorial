@@ -108,9 +108,12 @@ export default {
   overflow: auto;
   margin: auto;
   min-height: 800px;
-  border: none;
   text-align: center;
   padding: 5px;
   border-radius: 5px;
+  width: 426px;
+  padding: 56px;
+  border: 8px solid white;
+  margin-top: 92px;
 }
 </style>
